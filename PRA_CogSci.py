@@ -90,6 +90,13 @@ def rate(hidden_states,guesses):
 		else:
 			marginal_y[y] = 1+1
 	tot = len(hidden_states)
+	# hack to add appropriate pseudocounts
+	if len(marginal_y)<2:
+		marginal_y[str(2)] = 1
+	if len(marginal_xy)<2*len(marginal_x):
+		num = len(marginal_x)*2-len(marginal_xy)
+		for i in range(num):
+			marginal_xy[str(i+10)] = 1
 	# get the entropies
 	p_xy = np.asarray(list(joint_xy.values()))/tot
 	H_xy = -np.nansum(p_xy*np.log2(p_xy))
@@ -192,7 +199,7 @@ for i in range(len(betas)):
 # np.savez('Clumpy_PRA.npz',Rs=Rs,Ds=Ds,R_participant=R_participant,
 # 	D_participant=D_participant)
 
-dat = np.load('Clumpy_PRA.npz')
+dat = np.load('Double_PRA.npz')
 Rs = dat['Rs']; Ds = dat['Ds']
 R_participant = dat['R_participant']
 D_participant = dat['D_participant']
@@ -216,7 +223,7 @@ pl.plot(np.max(Rs),np.max(Ds),'*r',markersize=15)
 #pl.errorbar(x,y,np.vstack([yerrl,yerrh]),np.vstack([xerrl,xerrh]),'ok',ecolor=(0.5,0.5,0.5))
 pl.xlabel('Rate (bits)',size=20)
 pl.ylabel('Accuracy',size=20)
-pl.savefig('Clumpy_PRA2.pdf',bbox_inches='tight')
+pl.savefig('Double_PRA2.pdf',bbox_inches='tight')
 pl.show()
 
 dat = np.load('EvenProcess_PRA.npz')
