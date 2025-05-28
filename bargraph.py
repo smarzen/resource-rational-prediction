@@ -5,7 +5,7 @@ import matplotlib
 
 files = ['NoisyPeriodicData.txt',
 'EvenProcessData.txt',
-'ClumpyData.txt']
+'DoubleData.txt']
 
 np_data = {}
 ep_data = {}
@@ -123,7 +123,7 @@ print(counts)
 
 # pandas method
 colors = ["#e8bcd3","#f5e4b8","#b0c5d9","#b1d9b0"]
-dict = {'Labels': ['NoisyPeriodic','EvenProcess','Clumpy'],
+dict = {'Labels': ['NoisyPeriodic','EvenProcess','Double'],
         'Values': [count(np_data),count(ep_data),count(cl_data)]}
 df = pd.DataFrame(dict['Values'], index=dict['Labels'])
 df.plot(kind="bar", stacked=True, color = colors)

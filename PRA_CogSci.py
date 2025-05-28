@@ -80,15 +80,15 @@ def rate(hidden_states,guesses):
 		if xy in joint_xy:
 			joint_xy[xy] = joint_xy[xy]+1
 		else:
-			joint_xy[xy] = 1
+			joint_xy[xy] = 1+1
 		if x in marginal_x:
 			marginal_x[x] = marginal_x[x]+1
 		else:
-			marginal_x[x] = 1
+			marginal_x[x] = 1+1
 		if y in marginal_y:
 			marginal_y[y] = marginal_y[y]+1
 		else:
-			marginal_y[y] = 1
+			marginal_y[y] = 1+1
 	tot = len(hidden_states)
 	# get the entropies
 	p_xy = np.asarray(list(joint_xy.values()))/tot

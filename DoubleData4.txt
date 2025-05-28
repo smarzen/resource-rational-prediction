@@ -1,0 +1,118 @@
+
+
+mhksj310006S (Clumpy) 
+lstm: -453.5014235675335
+
+wunav382992X (Clumpy) 
+lstm: -210.94587880373
+
+qulgj185012V (Clumpy) 
+lstm: -727.1302727162838
+
+ewbui941811W (Clumpy) 
+lstm: -1120.260265558958
+
+tqagq526343W (Clumpy) 
+lstm: -590.5318515300751
+
+jdypw918008R (Clumpy) 
+lstm: -682.5494855940342
+
+wncly214390Z (Clumpy) 
+lstm: -518.4491294920444
+
+nypoz695877X (Clumpy) 
+lstm: -879.2021362483501
+
+ynqrp57494F (Clumpy) 
+lstm: -372.1230929195881
+
+ixwzp118179G (Clumpy) 
+lstm: -368.2637932598591
+
+lgcgh745317X (Clumpy) 
+lstm: -247.69252887368202
+
+xdxob322029K (Clumpy) 
+lstm: -290.4229693710804
+
+rvwmz898874Q (Clumpy) 
+lstm: -1266.9082378149033
+
+pnbkx917389J (Clumpy) 
+lstm: -697.6013720035553
+
+wihtf284444R (Clumpy) 
+lstm: -1001.5305643975735
+
+jwvdw627064U (Clumpy) 
+lstm: -2006.3834085166454
+
+twawp118838K (Clumpy) 
+lstm: -841.4019337296486
+
+dwfzm579846I (Clumpy) 
+lstm: -329.12919813394547
+
+twawp118838K (Clumpy) 
+lstm: -421.0038775205612
+
+twawp118838K (Clumpy) 
+lstm: -233.93363857269287
+
+dwfzm579846I (Clumpy) 
+lstm: -207.76387798786163
+
+rbofu331019B (Clumpy) 
+lstm: -983.8101652562618
+
+mhksj310006S (Clumpy) 
+lstm: -397.1994620859623
+
+vfccq677152Y (Clumpy) 
+lstm: -433.70332407951355
+
+usubo351636N (Clumpy) 
+lstm: -307.7046883404255
+
+dwfzm579846I (Clumpy) 
+lstm: -254.68681773543358
+
+vktfw438613T (Clumpy) 
+lstm: -519.1277581751347
+
+ctteg163408R (Clumpy) 
+lstm: -574.7850000858307
+
+gphzy937859D (Clumpy) 
+lstm: -1981.3367002010345
+
+titpc416169W (Clumpy) 
+lstm: -795.3839311301708
+
+tqarz285982K (Clumpy) 
+lstm: -230.0465770959854
+
+lvetb131843J (Clumpy) 
+lstm: -266.93390491604805
+
+afqgv194130O (Clumpy) 
+lstm: -933.5921737849712
+
+telml774231L (Clumpy) 
+lstm: -561.5225222408772
+
+titpc416169W (Clumpy) 
+lstm: -229.91916260123253
+
+ehekx648228N (Clumpy) 
+lstm: -413.7516251504421
+
+xkclc205244J (Clumpy) 
+lstm: -402.6470066308975
+
+pucgc695739B (Clumpy) 
+lstm: -600.0223005712032
+
+cxdfl383099X (Clumpy) 
+lstm: -1957.5075219273567

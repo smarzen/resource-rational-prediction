@@ -1,0 +1,118 @@
+
+
+mhksj310006S (Clumpy) 
+lstm: -451.19836485385895
+
+wunav382992X (Clumpy) 
+lstm: -212.56626799702644
+
+qulgj185012V (Clumpy) 
+lstm: -716.2875707745552
+
+ewbui941811W (Clumpy) 
+lstm: -1124.1605457365513
+
+tqagq526343W (Clumpy) 
+lstm: -591.8950547873974
+
+jdypw918008R (Clumpy) 
+lstm: -689.9056581556797
+
+wncly214390Z (Clumpy) 
+lstm: -518.4834594428539
+
+nypoz695877X (Clumpy) 
+lstm: -877.8966036736965
+
+ynqrp57494F (Clumpy) 
+lstm: -389.71149733662605
+
+ixwzp118179G (Clumpy) 
+lstm: -370.93916657567024
+
+lgcgh745317X (Clumpy) 
+lstm: -246.15490838885307
+
+xdxob322029K (Clumpy) 
+lstm: -287.93816953897476
+
+rvwmz898874Q (Clumpy) 
+lstm: -1255.2028816640377
+
+pnbkx917389J (Clumpy) 
+lstm: -683.9219083189964
+
+wihtf284444R (Clumpy) 
+lstm: -1003.4533350169659
+
+jwvdw627064U (Clumpy) 
+lstm: -2011.885790169239
+
+twawp118838K (Clumpy) 
+lstm: -849.9109129607677
+
+dwfzm579846I (Clumpy) 
+lstm: -324.1417579948902
+
+twawp118838K (Clumpy) 
+lstm: -421.50634586811066
+
+twawp118838K (Clumpy) 
+lstm: -232.11288303136826
+
+dwfzm579846I (Clumpy) 
+lstm: -213.8588554263115
+
+rbofu331019B (Clumpy) 
+lstm: -987.2813182473183
+
+mhksj310006S (Clumpy) 
+lstm: -398.7146255970001
+
+vfccq677152Y (Clumpy) 
+lstm: -434.9718742072582
+
+usubo351636N (Clumpy) 
+lstm: -307.2686777114868
+
+dwfzm579846I (Clumpy) 
+lstm: -252.81435906887054
+
+vktfw438613T (Clumpy) 
+lstm: -532.6032773554325
+
+ctteg163408R (Clumpy) 
+lstm: -576.8160476386547
+
+gphzy937859D (Clumpy) 
+lstm: -1981.7403694689274
+
+titpc416169W (Clumpy) 
+lstm: -799.3091450035572
+
+tqarz285982K (Clumpy) 
+lstm: -227.55203634500504
+
+lvetb131843J (Clumpy) 
+lstm: -272.3440098762512
+
+afqgv194130O (Clumpy) 
+lstm: -925.6982566714287
+
+telml774231L (Clumpy) 
+lstm: -559.6085832417011
+
+titpc416169W (Clumpy) 
+lstm: -230.15856397151947
+
+ehekx648228N (Clumpy) 
+lstm: -414.02558317780495
+
+xkclc205244J (Clumpy) 
+lstm: -402.6646010875702
+
+pucgc695739B (Clumpy) 
+lstm: -595.7473661601543
+
+cxdfl383099X (Clumpy) 
+lstm: -1959.591573357582
