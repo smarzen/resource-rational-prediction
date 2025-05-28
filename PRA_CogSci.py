@@ -196,15 +196,11 @@ dat = np.load('Clumpy_PRA.npz')
 Rs = dat['Rs']; Ds = dat['Ds']
 R_participant = dat['R_participant']
 D_participant = dat['D_participant']
-# R_participant_l = dat['R_participant_l']
-# D_participant_l = dat['D_participant_l']
 
-# pl.rcParams.update({'text.usetex': True,
-#                      'font.family': 'sans-serif',
-#                      'font.sans-serif': "Helvetica"})
+pl.rcParams.update({'text.usetex': True,
+                     'font.family': 'sans-serif',
+                     'font.sans-serif': "Helvetica"})
 pl.plot(Rs,Ds,'-k',linewidth=1.5)
-# R_participant_l = np.asarray(R_participant_l)
-# D_participant_l = np.asarray(D_participant_l)
 R_participant = np.asarray(R_participant)
 D_participant = np.asarray(D_participant)
 x = R_participant; #np.median(R_participant_l,1)
@@ -221,6 +217,60 @@ pl.plot(np.max(Rs),np.max(Ds),'*r',markersize=15)
 pl.xlabel('Rate (bits)',size=20)
 pl.ylabel('Accuracy',size=20)
 pl.savefig('Clumpy_PRA2.pdf',bbox_inches='tight')
+pl.show()
+
+dat = np.load('EvenProcess_PRA.npz')
+Rs = dat['Rs']; Ds = dat['Ds']
+R_participant = dat['R_participant']
+D_participant = dat['D_participant']
+
+pl.rcParams.update({'text.usetex': True,
+                     'font.family': 'sans-serif',
+                     'font.sans-serif': "Helvetica"})
+pl.plot(Rs,Ds,'-k',linewidth=1.5)
+R_participant = np.asarray(R_participant)
+D_participant = np.asarray(D_participant)
+x = R_participant; #np.median(R_participant_l,1)
+y = D_participant; #np.median(D_participant_l,1)
+# xerrl = np.median(R_participant_l,1)-np.percentile(R_participant_l,16,1)
+# xerr = np.std(R_participant_l,1)
+# xerrh = np.percentile(R_participant_l,84,1)-np.median(R_participant_l,1)
+# yerrl = np.median(D_participant_l,1)-np.percentile(D_participant_l,16,1)
+# yerr = np.std(D_participant_l,1)
+# yerrh = np.percentile(D_participant_l,84,1)-np.median(D_participant_l,1)
+pl.plot(x,y,'ok')
+pl.plot(np.max(Rs),np.max(Ds),'*r',markersize=15)
+#pl.errorbar(x,y,np.vstack([yerrl,yerrh]),np.vstack([xerrl,xerrh]),'ok',ecolor=(0.5,0.5,0.5))
+pl.xlabel('Rate (bits)',size=20)
+pl.ylabel('Accuracy',size=20)
+pl.savefig('EvenProcess_PRA2.pdf',bbox_inches='tight')
+pl.show()
+
+dat = np.load('NoisyPeriodic_PRA.npz')
+Rs = dat['Rs']; Ds = dat['Ds']
+R_participant = dat['R_participant']
+D_participant = dat['D_participant']
+
+pl.rcParams.update({'text.usetex': True,
+                     'font.family': 'sans-serif',
+                     'font.sans-serif': "Helvetica"})
+pl.plot(Rs,Ds,'-k',linewidth=1.5)
+R_participant = np.asarray(R_participant)
+D_participant = np.asarray(D_participant)
+x = R_participant; #np.median(R_participant_l,1)
+y = D_participant; #np.median(D_participant_l,1)
+# xerrl = np.median(R_participant_l,1)-np.percentile(R_participant_l,16,1)
+# xerr = np.std(R_participant_l,1)
+# xerrh = np.percentile(R_participant_l,84,1)-np.median(R_participant_l,1)
+# yerrl = np.median(D_participant_l,1)-np.percentile(D_participant_l,16,1)
+# yerr = np.std(D_participant_l,1)
+# yerrh = np.percentile(D_participant_l,84,1)-np.median(D_participant_l,1)
+pl.plot(x,y,'ok')
+pl.plot(np.max(Rs),np.max(Ds),'*r',markersize=15)
+#pl.errorbar(x,y,np.vstack([yerrl,yerrh]),np.vstack([xerrl,xerrh]),'ok',ecolor=(0.5,0.5,0.5))
+pl.xlabel('Rate (bits)',size=20)
+pl.ylabel('Accuracy',size=20)
+pl.savefig('NoisyPeriodic_PRA2.pdf',bbox_inches='tight')
 pl.show()
 
 # # make Vanessa's csv file
