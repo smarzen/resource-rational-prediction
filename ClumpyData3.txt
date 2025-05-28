@@ -1,0 +1,118 @@
+
+
+mhksj310006S (Clumpy) 
+lstm: -457.683585524559
+
+wunav382992X (Clumpy) 
+lstm: -210.11569640040398
+
+qulgj185012V (Clumpy) 
+lstm: -724.0173951089382
+
+ewbui941811W (Clumpy) 
+lstm: -1123.2202562987804
+
+tqagq526343W (Clumpy) 
+lstm: -581.3668820559978
+
+jdypw918008R (Clumpy) 
+lstm: -697.2090014219284
+
+wncly214390Z (Clumpy) 
+lstm: -526.341346859932
+
+nypoz695877X (Clumpy) 
+lstm: -872.7047542929649
+
+ynqrp57494F (Clumpy) 
+lstm: -387.8293092250824
+
+ixwzp118179G (Clumpy) 
+lstm: -366.2443507909775
+
+lgcgh745317X (Clumpy) 
+lstm: -249.3163234591484
+
+xdxob322029K (Clumpy) 
+lstm: -291.98521929979324
+
+rvwmz898874Q (Clumpy) 
+lstm: -1273.115741968155
+
+pnbkx917389J (Clumpy) 
+lstm: -695.1629214882851
+
+wihtf284444R (Clumpy) 
+lstm: -996.0972596406937
+
+jwvdw627064U (Clumpy) 
+lstm: -2009.3483987152576
+
+twawp118838K (Clumpy) 
+lstm: -845.7377037703991
+
+dwfzm579846I (Clumpy) 
+lstm: -337.53738006949425
+
+twawp118838K (Clumpy) 
+lstm: -422.76875817775726
+
+twawp118838K (Clumpy) 
+lstm: -232.33193445205688
+
+dwfzm579846I (Clumpy) 
+lstm: -209.21424546837807
+
+rbofu331019B (Clumpy) 
+lstm: -974.9784767627716
+
+mhksj310006S (Clumpy) 
+lstm: -395.26838263869286
+
+vfccq677152Y (Clumpy) 
+lstm: -439.03489565849304
+
+usubo351636N (Clumpy) 
+lstm: -311.3259526491165
+
+dwfzm579846I (Clumpy) 
+lstm: -250.52491530776024
+
+vktfw438613T (Clumpy) 
+lstm: -526.6428292095661
+
+ctteg163408R (Clumpy) 
+lstm: -578.467632651329
+
+gphzy937859D (Clumpy) 
+lstm: -1948.1221190989017
+
+titpc416169W (Clumpy) 
+lstm: -789.1963498592377
+
+tqarz285982K (Clumpy) 
+lstm: -226.07164153456688
+
+lvetb131843J (Clumpy) 
+lstm: -265.4497731924057
+
+afqgv194130O (Clumpy) 
+lstm: -936.77669480443
+
+telml774231L (Clumpy) 
+lstm: -564.1383527517319
+
+titpc416169W (Clumpy) 
+lstm: -228.27725479006767
+
+ehekx648228N (Clumpy) 
+lstm: -418.8863444328308
+
+xkclc205244J (Clumpy) 
+lstm: -406.23636823892593
+
+pucgc695739B (Clumpy) 
+lstm: -605.9578602612019
+
+cxdfl383099X (Clumpy) 
+lstm: -1954.887525320053

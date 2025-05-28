@@ -7,7 +7,8 @@ from sklearn.linear_model import LogisticRegression
 import tensorflow as tf
 from tensorflow import keras
 
-file_path = 'C:/Users/amyyu/Downloads/Research Summer 2023/Experiment3a.csv' 
+# Download experiment.csv from https://github.com/vanferdi/resource-rational-prediction/blob/main/Data/experiment.csv
+file_path = 'experiment.csv' 
 emlibrary_path = 'EMLibrary/'
 
 ## trains an LSTM off the given parameters.

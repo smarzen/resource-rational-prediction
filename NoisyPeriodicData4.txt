@@ -1,0 +1,136 @@
+
+
+mrpnb803743J (NoisyPeriodic) 
+lstm: -407.71931651234627
+
+ehjau697293N (NoisyPeriodic) 
+lstm: -423.0902644395828
+
+wcnlt663540E (NoisyPeriodic) 
+lstm: -355.8176631629467
+
+uwwjh797912W (NoisyPeriodic) 
+lstm: -359.46592208743095
+
+hydcd164534F (NoisyPeriodic) 
+lstm: -528.2193765342236
+
+vujec294540Q (NoisyPeriodic) 
+lstm: -281.48708537220955
+
+dwfzm579846I (NoisyPeriodic) 
+lstm: -388.86684587597847
+
+telml774231L (NoisyPeriodic) 
+lstm: -339.1129003763199
+
+afxcb774339E (NoisyPeriodic) 
+lstm: -358.64889842271805
+
+salkl836316P (NoisyPeriodic) 
+lstm: -313.28481167554855
+
+norhz58509F (NoisyPeriodic) 
+lstm: -369.8411792218685
+
+hpibl62895S (NoisyPeriodic) 
+lstm: -94.27140802145004
+
+dwfzm579846I (NoisyPeriodic) 
+lstm: -336.38634955883026
+
+vvxgd744174I (NoisyPeriodic) 
+lstm: -355.7696930170059
+
+trcay423686I (NoisyPeriodic) 
+lstm: -403.73218461871147
+
+dwfzm579846I (NoisyPeriodic) 
+lstm: -334.6835117340088
+
+ockcl442044Q (NoisyPeriodic) 
+lstm: -375.9706194996834
+
+pjdtj929767L (NoisyPeriodic) 
+lstm: -364.5787456333637
+
+zcxzw934619W (NoisyPeriodic) 
+lstm: -349.1982215642929
+
+gbrtz534966G (NoisyPeriodic) 
+lstm: -568.5905126333237
+
+kwmyl612091S (NoisyPeriodic) 
+lstm: -390.14785635471344
+
+auhfw645045I (NoisyPeriodic) 
+lstm: -588.3463016450405
+
+ihvmm662745U (NoisyPeriodic) 
+lstm: -513.9109824299812
+
+mrpnb803743J (NoisyPeriodic) 
+lstm: -350.1414696574211
+
+khkcb460005D (NoisyPeriodic) 
+lstm: -510.8832890987396
+
+ofvgw760157Z (NoisyPeriodic) 
+lstm: -355.8379062116146
+
+qiaft649859G (NoisyPeriodic) 
+lstm: -356.59909749031067
+
+gkchy705298R (NoisyPeriodic) 
+lstm: -2040.0352897942066
+
+omzkd321256N (NoisyPeriodic) 
+lstm: -351.0850703418255
+
+ctteg163408R (NoisyPeriodic) 
+lstm: -159.50996056199074
+
+oabbw416054G (NoisyPeriodic) 
+lstm: -368.9025596678257
+
+qulgj185012V (NoisyPeriodic) 
+lstm: -363.73801225423813
+
+okrkl658699Z (NoisyPeriodic) 
+lstm: -632.0858503878117
+
+jdypw918008R (NoisyPeriodic) 
+lstm: -780.7309707403183
+
+zmvzk687879H (NoisyPeriodic) 
+lstm: -358.3836445212364
+
+zgupf908753D (NoisyPeriodic) 
+lstm: -366.31155520677567
+
+lgxrm890154T (NoisyPeriodic) 
+lstm: -368.211947619915
+
+cxdfl383099X (NoisyPeriodic) 
+lstm: -2155.8446896374226
+
+omzkd321256N (NoisyPeriodic) 
+lstm: -366.922284334898
+
+mrpnb803743J (NoisyPeriodic) 
+lstm: -343.84701442718506
+
+oetak758131T (NoisyPeriodic) 
+lstm: -372.74445432424545
+
+omzkd321256N (NoisyPeriodic) 
+lstm: -368.92002362012863
+
+qulgj185012V (NoisyPeriodic) 
+lstm: -342.22570636868477
+
+mrpnb803743J (NoisyPeriodic) 
+lstm: -376.7944863140583
+
+oabbw416054G (NoisyPeriodic) 
+lstm: -353.54193115234375

@@ -1,0 +1,169 @@
+
+
+ynlpz493018S (EvenProcess) 
+lstm: -283.40288519859314
+
+ojopo127339K (EvenProcess) 
+lstm: -775.6739908456802
+
+obaee925048N (EvenProcess) 
+lstm: -471.61552768945694
+
+avesc196763B (EvenProcess) 
+lstm: -550.4262616634369
+
+omzkd321256N (EvenProcess) 
+lstm: -666.4803852438927
+
+ozajc829107C (EvenProcess) 
+lstm: -410.2309089899063
+
+snfth674587P (EvenProcess) 
+lstm: -259.08316323161125
+
+bopxh367906H (EvenProcess) 
+lstm: -582.0530969500542
+
+mhksj310006S (EvenProcess) 
+lstm: -406.23498398065567
+
+umvrn184514D (EvenProcess) 
+lstm: -678.7878984212875
+
+omzkd321256N (EvenProcess) 
+lstm: -592.9967316091061
+
+ofvgw760157Z (EvenProcess) 
+lstm: -574.1444268524647
+
+nkrkn574558D (EvenProcess) 
+lstm: -486.3538775444031
+
+wqaap483120F (EvenProcess) 
+lstm: -374.5640360414982
+
+gzuky186803E (EvenProcess) 
+lstm: -800.9399312138557
+
+mhksj310006S (EvenProcess) 
+lstm: -354.2091056108475
+
+ofvgw760157Z (EvenProcess) 
+lstm: -804.1752099990845
+
+ouwmz583322G (EvenProcess) 
+lstm: -254.36900740861893
+
+pjdtj929767L (EvenProcess) 
+lstm: -323.81833070516586
+
+tzwxg672614F (EvenProcess) 
+lstm: -486.08107712864876
+
+xkclc205244J (EvenProcess) 
+lstm: -387.2228364944458
+
+wkcxm70177Z (EvenProcess) 
+lstm: -852.8732804954052
+
+zhqmb136421S (EvenProcess) 
+lstm: -432.45048439502716
+
+nrgcl965630J (EvenProcess) 
+lstm: -859.5962339937687
+
+lcxco479204H (EvenProcess) 
+lstm: -429.963780939579
+
+oabbw416054G (EvenProcess) 
+lstm: -427.9013146162033
+
+betlm976378R (EvenProcess) 
+lstm: -1767.9338619709015
+
+qulgj185012V (EvenProcess) 
+lstm: -733.771229416132
+
+okrkl658699Z (EvenProcess) 
+lstm: -478.41906812787056
+
+cixwi138262R (EvenProcess) 
+lstm: -502.05875608325005
+
+jdypw918008R (EvenProcess) 
+lstm: -368.4514437019825
+
+ctteg163408R (EvenProcess) 
+lstm: -782.3136266469955
+
+ipxkb139869P (EvenProcess) 
+lstm: -257.27182161808014
+
+twawp118838K (EvenProcess) 
+lstm: -531.8614957034588
+
+ofvgw760157Z (EvenProcess) 
+lstm: -655.031425923109
+
+whmpl87054X (EvenProcess) 
+lstm: -494.75797310471535
+
+omzkd321256N (EvenProcess) 
+lstm: -687.9650022387505
+
+zhqmb136421S (EvenProcess) 
+lstm: -1039.4676917493343
+
+wwtji852859H (EvenProcess) 
+lstm: -361.6803655028343
+
+dwfzm579846I (EvenProcess) 
+lstm: -284.459110558033
+
+twawp118838K (EvenProcess) 
+lstm: -462.6403419673443
+
+nurah461687G (EvenProcess) 
+lstm: -673.0353211462498
+
+ofvgw760157Z (EvenProcess) 
+lstm: -762.5192899405956
+
+cixwi138262R (EvenProcess) 
+lstm: -752.9595269858837
+
+ybuco534372Q (EvenProcess) 
+lstm: -654.5850960016251
+
+zykuy782103M (EvenProcess) 
+lstm: -31.965465009212494
+
+ihvmm662745U (EvenProcess) 
+lstm: -829.266859382391
+
+ngjor404877U (EvenProcess) 
+lstm: -1973.355994939804
+
+ycjem49043N (EvenProcess) 
+lstm: -520.7436113059521
+
+gzuky186803E (EvenProcess) 
+lstm: -583.9301500022411
+
+vnriy689962H (EvenProcess) 
+lstm: -640.0782617628574
+
+ouwmz583322G (EvenProcess) 
+lstm: -205.60596719384193
+
+qulgj185012V (EvenProcess) 
+lstm: -1223.2574125528336
+
+durrz246779V (EvenProcess) 
+lstm: -437.7629533112049
+
+rvwmz898874Q (EvenProcess) 
+lstm: -2083.783192127943
+
+kylda318929P (EvenProcess) 
+lstm: -420.17805632948875
