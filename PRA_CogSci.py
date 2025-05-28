@@ -89,7 +89,6 @@ def rate(hidden_states,guesses):
 			marginal_y[y] = marginal_y[y]+1
 		else:
 			marginal_y[y] = 1+1
-	tot = len(hidden_states)
 	# hack to add appropriate pseudocounts
 	if len(marginal_y)<2:
 		marginal_y[str(2)] = 1
@@ -97,12 +96,16 @@ def rate(hidden_states,guesses):
 		num = len(marginal_x)*2-len(marginal_xy)
 		for i in range(num):
 			marginal_xy[str(i+10)] = 1
+	# find tot
+	tot_xy = np.sum(list(joint_xy.values()))
+	tot_x = np.sum(list(marginal_x.values()))
+	tot_y = np.sum(list(marginal_y.values()))
 	# get the entropies
-	p_xy = np.asarray(list(joint_xy.values()))/tot
+	p_xy = np.asarray(list(joint_xy.values()))/tot_xy
 	H_xy = -np.nansum(p_xy*np.log2(p_xy))
-	p_x = np.asarray(list(marginal_x.values()))/tot
+	p_x = np.asarray(list(marginal_x.values()))/tot_x
 	H_x = -np.nansum(p_x*np.log2(p_x))
-	p_y = np.asarray(list(marginal_y.values()))/tot
+	p_y = np.asarray(list(marginal_y.values()))/tot_y
 	H_y = -np.nansum(p_y*np.log2(p_y))
 	# get the mutual information
 	I_xy = H_x+H_y-H_xy
