@@ -90,12 +90,17 @@ def rate(hidden_states,guesses):
 		else:
 			marginal_y[y] = 1+1
 	# hack to add appropriate pseudocounts
+	all_cs = np.unique(hidden_states)
+	all_output = [0,1]
 	if len(marginal_y)<2:
 		marginal_y[str(2)] = 1
-	if len(marginal_xy)<2*len(marginal_x):
-		num = len(marginal_x)*2-len(marginal_xy)
-		for i in range(num):
-			marginal_xy[str(i+10)] = 1
+	for cs in all_cs:
+		for output in all_output:
+			xy = str(cs)+str(output)
+			if xy in joint_xy:
+				pass
+			else:
+				joint_xy[xy] = 1
 	# find tot
 	tot_xy = np.sum(list(joint_xy.values()))
 	tot_x = np.sum(list(marginal_x.values()))
@@ -153,7 +158,7 @@ R_participant = []
 m = 5
 for i in range(len(Inputs)):
 	#foo = data['records'][i]
-	if Input_Types[i]=='NoisyPeriodic':
+	if Input_Types[i]=='Clumpy':
 		# load in the dictionary for that participant
 		# figure out if they learned
 		accuracy = Accuracy[i]
