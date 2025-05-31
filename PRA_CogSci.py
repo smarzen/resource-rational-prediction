@@ -288,24 +288,24 @@ pl.ylabel('Accuracy',size=20)
 pl.savefig('NoisyPeriodic_PRA2.pdf',bbox_inches='tight')
 pl.show()
 
-# # make Vanessa's csv file
-# dat = np.load('Clumpy_PRA.npz')
-# Rs = dat['Rs']; Ds = dat['Ds']
-# # extend Rs to the maximal value of Rs
-# Rs_C = np.hstack([Rs,np.linspace(np.max(Rs),0.9542553220366964,100)])
-# Ds_C = np.hstack([Ds,np.ones(100)*np.max(Ds)])
+# make Vanessa's csv file
+dat = np.load('Double_PRA.npz')
+Rs = dat['Rs']; Ds = dat['Ds']
+# extend Rs to the maximal value of Rs
+Rs_C = np.hstack([Rs,np.linspace(np.max(Rs),0.9542553220366964,100)])
+Ds_C = np.hstack([Ds,np.ones(100)*np.max(Ds)])
 
-# dat = np.load('EvenProcess_PRA.npz')
-# Rs = dat['Rs']; Ds = dat['Ds']
-# # extend Rs to the maximal value of Rs
-# Rs_E = Rs
-# Ds_E = Ds
+dat = np.load('EvenProcess_PRA.npz')
+Rs = dat['Rs']; Ds = dat['Ds']
+# extend Rs to the maximal value of Rs
+Rs_E = Rs
+Ds_E = Ds
 
-# dat = np.load('NoisyPeriodic_PRA.npz')
-# Rs = dat['Rs']; Ds = dat['Ds']
-# # extend Rs to the maximal value of Rs
-# Rs_N = Rs
-# Ds_N = Ds
+dat = np.load('NoisyPeriodic_PRA.npz')
+Rs = dat['Rs']; Ds = dat['Ds']
+# extend Rs to the maximal value of Rs
+Rs_N = Rs
+Ds_N = Ds
 
 distances_orthogonal = []
 distances_r = []
