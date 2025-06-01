@@ -41,31 +41,64 @@ def emissionProbs(input_type='NoisyPeriodic'):
 		p[2,:] = p[2,:]*cl_psigma[2]
 	return p
 
-def PRD(p,beta):
-	# uses accuracy rather than pred power
-	# d(x,xhat) = p(x=xhat|sigma)
-	# calculate p(x|sigma)
-	pX = np.sum(p,0)
-	pS = np.sum(p,1)
-	pXgS = np.dot(np.diag(1/pS),p)
-	# get distortion matrix
-	d = pXgS
-	#
-	pXhatgS0 = np.random.uniform(size=len(pS))
-	pXhatgS = np.vstack([pXhatgS0,1-pXhatgS0]).T
-	pXhat = np.dot(pXhatgS.T,pS) #np.sum(np.dot(np.diag(pS),pXhatgS),0)
-	# loop
-	for t in range(10000): # fix this
-		log_pXhatgS = np.meshgrid(np.log(pXhat),np.ones(len(pS)))[0]+beta*d
-		pXhatgS = np.exp(log_pXhatgS)
-		Zs = np.sum(pXhatgS,1)
-		pXhatgS = np.dot(np.diag(1/Zs),pXhatgS)
-		pXhat = np.dot(pXhatgS.T,pS)
-	#
-	HXhat = -np.nansum(pXhat*np.log(pXhat))
-	R = HXhat+np.dot(pS,np.nansum(pXhatgS*np.log(pXhatgS),1)) 
-	D = np.dot(pS,np.sum(pXhatgS*pXgS,1))
-	return R, D
+def rate_distortion(p, beta, tol=1e-6, max_iter=5000):
+    """
+    Calculate the rate-distortion function for a given joint probability distribution p and a beta value.
+
+    Args:
+    p: Joint probability distribution.
+    beta: Beta value, which can be interpreted as the inverse temperature in statistical physics.
+    tol: Tolerance for convergence. If the change in marginal_pXhat and conditional_pXhat_given_S is less than tol,
+         the function will stop iterating and return the current rate and distortion.
+    max_iter: Maximum number of iterations.
+
+    Returns:
+    R: The rate value in the rate-distortion function.
+    D: The distortion value in the rate-distortion function.
+    """
+    
+    # Calculate the marginal probabilities of X and S
+    marginal_pX = np.sum(p, 0)
+    marginal_pS = np.sum(p, 1)
+
+    # Calculate conditional probability of X given S
+    conditional_pX_given_S = np.dot(np.diag(1 / marginal_pS), p)
+
+    # Distortion matrix is equal to the conditional probability of X given S
+    distortion_matrix = conditional_pX_given_S
+
+    # Initialize the conditional probability of Xhat given S randomly
+    initial_conditional_pXhat_given_S0 = np.random.uniform(size=len(marginal_pS))
+    conditional_pXhat_given_S = np.vstack([initial_conditional_pXhat_given_S0, 1 - initial_conditional_pXhat_given_S0]).T
+
+    # Calculate the marginal probability of Xhat
+    marginal_pXhat = np.dot(conditional_pXhat_given_S.T, marginal_pS)
+
+    # Iterate to refine the conditional probability of Xhat given S and marginal probability of Xhat
+    for _ in range(max_iter):
+        # Calculate new estimates
+        log_conditional_pXhat_given_S = np.meshgrid(np.log2(marginal_pXhat), np.ones(len(marginal_pS)))[0] + beta * distortion_matrix
+        new_conditional_pXhat_given_S = np.exp(log_conditional_pXhat_given_S)
+        normalization_constants = np.sum(new_conditional_pXhat_given_S, 1)
+        new_conditional_pXhat_given_S = np.dot(np.diag(1 / normalization_constants), new_conditional_pXhat_given_S)
+        new_marginal_pXhat = np.dot(new_conditional_pXhat_given_S.T, marginal_pS)
+        
+        # Check for convergence
+        if np.allclose(marginal_pXhat, new_marginal_pXhat, atol=tol) and np.allclose(conditional_pXhat_given_S, new_conditional_pXhat_given_S, atol=tol):
+            # print('beta=', beta, 'converged after', _+1, 'iterations')
+            break
+        
+        # Update estimates
+        marginal_pXhat = new_marginal_pXhat
+        conditional_pXhat_given_S = new_conditional_pXhat_given_S
+
+    # Calculate the rate value R in the rate-distortion function
+    R = -np.nansum(marginal_pXhat * np.log2(marginal_pXhat)) + np.dot(marginal_pS, np.nansum(conditional_pXhat_given_S * np.log2(conditional_pXhat_given_S), 1))
+
+    # Calculate the distortion value D in the rate-distortion function
+    D = np.dot(marginal_pS, np.sum(conditional_pXhat_given_S * conditional_pX_given_S, 1))
+
+    return R, D
 
 def rate(hidden_states,guesses):
 	# get statistics
@@ -195,12 +228,12 @@ for i in range(len(Inputs)):
 		else:
 			pass
 
-betas = np.linspace(0,100,1000)
-p = emissionProbs('Clumpy')
+betas = np.linspace(0,100,10000)
+p = emissionProbs('EvenProcess')
 Rs = []
 Ds = []
 for i in range(len(betas)):
-	r, d = PRD(p,betas[i])
+	r, d = rate_distortion(p,betas[i],1e-9)
 	Rs.append(r)
 	Ds.append(d)
 
