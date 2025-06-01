@@ -41,7 +41,7 @@ def emissionProbs(input_type='NoisyPeriodic'):
 		p[2,:] = p[2,:]*cl_psigma[2]
 	return p
 
-def rate_distortion(p, beta, tol=1e-6, max_iter=5000):
+def rate_distortion(p, beta, tol=1e-6, max_iter=10000):
     """
     Calculate the rate-distortion function for a given joint probability distribution p and a beta value.
 
@@ -68,7 +68,7 @@ def rate_distortion(p, beta, tol=1e-6, max_iter=5000):
     distortion_matrix = conditional_pX_given_S
 
     # Initialize the conditional probability of Xhat given S randomly
-    initial_conditional_pXhat_given_S0 = np.random.uniform(size=len(marginal_pS))
+    initial_conditional_pXhat_given_S0 = np.ones(len(marginal_pS))/len(marginal_pS)
     conditional_pXhat_given_S = np.vstack([initial_conditional_pXhat_given_S0, 1 - initial_conditional_pXhat_given_S0]).T
 
     # Calculate the marginal probability of Xhat
@@ -324,21 +324,60 @@ pl.show()
 # make Vanessa's csv file
 dat = np.load('Double_PRA.npz')
 Rs = dat['Rs']; Ds = dat['Ds']
+# interpolate
+Rs_C = np.asarray([Rs[0]]); Ds_C = np.asarray([Ds[0]])
+for i in range(len(Rs)-1):
+	if Ds[i+1]>Ds[i]:
+		r = np.linspace(Rs[i],Rs[i+1],100)
+		d = (Ds[i+1]-Ds[i])/(Rs[i+1]-Rs[i])*r+Ds[i]-(Ds[i+1]-Ds[i])/(Rs[i+1]-Rs[i])*Rs[i]
+		Rs_C = np.hstack([Rs_C,r])
+		Ds_C = np.hstack([Ds_C,d])
+	else:
+		r = Rs[i]
+		d = Ds[i]
+		Rs_C = np.hstack([Rs_C,r])
+		Ds_C = np.hstack([Ds_C,d])
+Rs_C = np.asarray(Rs_C)
+Ds_C = np.asarray(Ds_C)
 # extend Rs to the maximal value of Rs
-Rs_C = np.hstack([Rs,np.linspace(np.max(Rs),0.9542553220366964,100)])
-Ds_C = np.hstack([Ds,np.ones(100)*np.max(Ds)])
+Rs_C = np.hstack([Rs_C,np.linspace(np.max(Rs_C),0.9542553220366964,100)])
+Ds_C = np.hstack([Ds_C,np.ones(100)*np.max(Ds_C)])
 
 dat = np.load('EvenProcess_PRA.npz')
 Rs = dat['Rs']; Ds = dat['Ds']
-# extend Rs to the maximal value of Rs
-Rs_E = Rs
-Ds_E = Ds
+# interpolate
+Rs_E = np.asarray([Rs[0]]); Ds_E = np.asarray([Ds[0]])
+for i in range(len(Rs)-1):
+	if Ds[i+1]>Ds[i]:
+		r = np.linspace(Rs[i],Rs[i+1],100)
+		d = (Ds[i+1]-Ds[i])/(Rs[i+1]-Rs[i])*r+Ds[i]-(Ds[i+1]-Ds[i])/(Rs[i+1]-Rs[i])*Rs[i]
+		Rs_E = np.hstack([Rs_E,r])
+		Ds_E = np.hstack([Ds_E,d])
+	else:
+		r = Rs[i]
+		d = Ds[i]
+		Rs_E = np.hstack([Rs_E,r])
+		Ds_E = np.hstack([Ds_E,d])
+Rs_E = np.asarray(Rs_E)
+Ds_E = np.asarray(Ds_E)
 
 dat = np.load('NoisyPeriodic_PRA.npz')
 Rs = dat['Rs']; Ds = dat['Ds']
-# extend Rs to the maximal value of Rs
-Rs_N = Rs
-Ds_N = Ds
+# interpolate
+Rs_N = np.asarray([Rs[0]]); Ds_N = np.asarray([Ds[0]])
+for i in range(len(Rs)-1):
+	if Ds[i+1]>Ds[i]:
+		r = np.linspace(Rs[i],Rs[i+1],100)
+		d = (Ds[i+1]-Ds[i])/(Rs[i+1]-Rs[i])*r+Ds[i]-(Ds[i+1]-Ds[i])/(Rs[i+1]-Rs[i])*Rs[i]
+		Rs_N = np.hstack([Rs_N,r])
+		Ds_N = np.hstack([Ds_N,d])
+	else:
+		r = Rs[i]
+		d = Ds[i]
+		Rs_N = np.hstack([Rs_N,r])
+		Ds_N = np.hstack([Ds_N,d])
+Rs_N = np.asarray(Rs_N)
+Ds_N = np.asarray(Ds_N)
 
 distances_orthogonal = []
 distances_r = []
